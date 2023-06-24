@@ -1,0 +1,14 @@
+.Profile_Container {
+	display: flex;
+	weight:2rem;
+}
+.Profile_NameContainer{
+	
+}
+.firstName{
+	
+}
+.Profile_Container_Avatar {
+	width: 100px;
+	height: 100px;
+}

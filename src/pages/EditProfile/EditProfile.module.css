@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+body {
+	overflow: hidden;
+}
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #8b9db8, #dff1ff);
+}
+section .color {
+	position: absolute;
+	filter: blur(150px);
+}
+section .color:nth-child(1) {
+	top: -350px;
+	width: 600px;
+	height: 600px;
+	background: #ff359b;
+}
+section .color:nth-child(2) {
+	bottom: -150px;
+	left: 100px;
+	width: 500px;
+	height: 500px;
+	background: #fffd87;
+}
+section .color:nth-child(3) {
+	bottom: 50px;
+	right: 100px;
+	width: 500px;
+	height: 500px;
+	background: #00d2ff;
+}
+.box {
+	position: relative;
+}
+.box .square {
+	position: absolute;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	0%,
+	100% {
+		transform: translateY(-40px);
+	}
+	50% {
+		transform: translateY(40px);
+	}
+}
+.box .square:nth-child(1) {
+	top: -50px;
+	right: -60px;
+	width: 100px;
+	height: 100px;
+}
+.box .square:nth-child(2) {
+	top: 150px;
+	left: -100px;
+	width: 120px;
+	height: 120px;
+	z-index: 2;
+}
+.box .square:nth-child(3) {
+	bottom: 50px;
+	right: -60px;
+	width: 80px;
+	height: 80px;
+	z-index: 2;
+}
+.box .square:nth-child(4) {
+	bottom: -80px;
+	left: 100px;
+	width: 50px;
+	height: 50px;
+}
+.box .square:nth-child(5) {
+	top: -80px;
+	left: 140px;
+	width: 60px;
+	height: 60px;
+}
+.container {
+	position: relative;
+	width: 1800px;
+	min-height: 800px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 2rem 4rem;
+	margin-left: 120px;
+	margin-right: 120px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container_Nav {
+	width: 550px;
+	min-height: 800px;
+	position: relative;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+.icons {
+	font-size: 2rem;
+	color: #505050;
+}
+.icons_feed {
+	font-size: 2rem;
+	color: #f9f9f9;
+}
+.container_profile {
+	display: flex;
+	align-items: center;
+}
+.container_profile_text {
+	color: rgb(52, 52, 52);
+}
+.container_profile_text span {
+	font-weight: bold;
+}
+.container_profile_text p {
+	font-weight: 10px;
+}
+.container_profile_settings {
+	padding-left: 10px;
+	margin-left: 10px;
+}
+.writePostButton {
+	width: 50%;
+	margin-left: 3.5rem;
+	margin-top: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.container_Post {
+	width: 100%;
+	min-height: 50rem;
+	max-height: 100%;
+	position: relative;
+	padding: 10px 5rem;
+
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+.Navbar {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+.Navbar_Link {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 0.5rem;
+	align-content: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.Navbar_Link p {
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #505050;
+	margin-left: 15px;
+}
+.Navbar_Feed {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 1rem;
+	align-content: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.Navbar_Feed p {
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.container_logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin-right: 4px;
+}
+.logo_text {
+	display: flex;
+	justify-content: center;
+	letter-spacing: 3px;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.WritePost {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.234);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+.WritePost input {
+	width: 90%;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	background-color: rgba(255, 255, 255, 0);
+	border: 1px solid rgba(255, 255, 255, 0);
+
+	border-radius: 10px;
+
+	font-size: 15px;
+	font-weight: 8px;
+	letter-spacing: 1.5px;
+}
+.WritePost button {
+	width: 100%;
+	margin-left: 6rem;
+	margin-bottom: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.Posts {
+	max-width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.234);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+.Posts_header {
+	display: flex;
+	align-items: flex-start;
+	font-size: 14px;
+}
+.Posts_header_info {
+	font-weight: bold;
+}
+.Posts_header_info span {
+	color: #657786;
+	font-weight: normal;
+	margin-left: 5px;
+}
+.Posts_header_info p {
+	font-weight: normal;
+	margin-top: 5px;
+}
+.avator {
+	border-radius: 100px;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin-right: 15px;
+}
+.Posts_Count {
+	display: flex;
+	margin: 10px 30px 10px 6rem;
+}
+.Posts_Count p {
+	margin-left: 7px;
+}
+.Posts_Likes {
+	display: flex;
+	align-items: center;
+}
+.Posts_Comments {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+}
+.form {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+.form h2 {
+	position: relative;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+.form h2::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 80px;
+	height: 4px;
+	background: #fff;
+}
+.form .inputBox {
+	width: 100%;
+	margin-top: 20px;
+}
+.form .inputBox input {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.form .inputBox input::placeholder {
+	color: #fff;
+}
+.form .inputBox input[type="submit"] {
+	background: #fff;
+	color: #666;
+	max-width: 100px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.forget {
+	margin-top: 5px;
+	color: #fff;
+}
+.forget a {
+	color: #fff;
+	font-weight: 600;
+}
