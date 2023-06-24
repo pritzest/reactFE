@@ -1,12 +1,10 @@
 .Profile_Container {
 	display: flex;
-	weight:2rem;
+	width: 1rem;
 }
-.Profile_NameContainer{
-	
+.Profile_NameContainer {
 }
-.firstName{
-	
+.firstName {
 }
 .Profile_Container_Avatar {
 	width: 100px;
