@@ -15,6 +15,7 @@ import ToastContainer, { toaster } from "../../components/ToastContainer";
 function Navbar() {
 	const navigate = useNavigate();
 	const decodedUser = jwt_decode(localStorage.getItem("token"));
+	const userId = decodedUser.id;
 	const profilePicture =
 		decodedUser.profilePicture ?? "https://i.stack.imgur.com/l60Hf.png";
 
@@ -44,7 +45,6 @@ function Navbar() {
 					<IoSettingsOutline className={classes.icons} />
 				</div>
 			</div>
-			<button className={classes.writePostButton}>Write a Post</button>
 			<div className={classes.Navbar}>
 				<div
 					className={classes.Navbar_Link}
@@ -55,7 +55,7 @@ function Navbar() {
 				</div>
 				<div
 					className={classes.Navbar_Link}
-					onClick={() => navigate("/profile")}
+					onClick={() => navigate(`/profile/${userId}`)}
 				>
 					<IoPersonAddOutline className={classes.icons} />
 					<p>Profile</p>

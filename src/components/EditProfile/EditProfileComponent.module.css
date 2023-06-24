@@ -1,12 +1,89 @@
-.Profile_Container {
+.EditProfileContainer {
 	display: flex;
-	width: 1rem;
+	flex-wrap: wrap;
+	padding-top: 20px;
+	font-size: 18px;
 }
-.Profile_NameContainer {
+h2 {
+	font-size: 1.5rem;
+	color: rgb(56, 56, 56);
 }
-.firstName {
+.Profile_Container {
+	margin-top: 20px;
+	width: 100%;
+	gap: 20px 30px; /* row-gap column gap */
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(163, 163, 163);
+}
+
+.Profile_Container2 {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+input {
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+textarea {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.saveButton {
+	margin-top: 20px;
+	width: 200px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	outline: none;
+	border-radius: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.Profile_Avatar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 .Profile_Container_Avatar {
 	width: 100px;
 	height: 100px;
+}
+input {
+	width: 200px;
 }

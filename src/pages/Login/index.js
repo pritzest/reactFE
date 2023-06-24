@@ -22,7 +22,6 @@ function Login() {
 			);
 			const data = await res.json();
 
-			console.log(data);
 			if (res.status === 422) {
 				toaster.error(data.message[0].msg);
 				throw res;
@@ -102,10 +101,6 @@ function Login() {
 												</button>
 											</div>
 											<p className={classes.forget}>
-												Forgot Password?{" "}
-												<a href="/forgot">Click here!</a>
-											</p>
-											<p className={classes.forget}>
 												Don't have an account?
 												<a
 													href="/signup"
@@ -113,7 +108,6 @@ function Login() {
 														navigate("/signup")
 													}
 												>
-													{" "}
 													Sign Up
 												</a>
 											</p>

@@ -7,7 +7,7 @@ import Post from "../../components/Posts/index";
 import NavBar from "../../components/Navbar/index";
 import UserPosts from "../../components/UserPosts";
 
-function Login() {
+function Feed() {
 	const [posts, setPosts] = useState([]);
 	const [post, setPost] = useState("");
 	const navigate = useNavigate();
@@ -41,7 +41,6 @@ function Login() {
 
 			const data = await res.json();
 			setPosts(data.postsData);
-			console.log(data.postsData)
 		} catch (err) {
 			console.log(err);
 		}
@@ -115,4 +114,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default Feed;

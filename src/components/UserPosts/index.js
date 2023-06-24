@@ -45,7 +45,6 @@ function UserPosts({ profilePicture }) {
 					body: JSON.stringify({ description: post }),
 				}
 			);
-			console.log(res);
 
 			const data = await res.json();
 			if (res.status === 422) {
@@ -55,10 +54,13 @@ function UserPosts({ profilePicture }) {
 				toaster.error(data.message);
 				throw res;
 			}
+
 			toaster.success(data.message);
-			setTimeout(() => {
-				window.location.reload(true);
-			}, 2000);
+			setPosts((prev) => [
+				{ ...data.blog, comments: [], likes: [] },
+				...prev,
+			]);
+			setPost("");
 		} catch (err) {
 			console.log(err);
 		}
@@ -71,6 +73,11 @@ function UserPosts({ profilePicture }) {
 	useEffect(() => {
 		fetchPosts();
 	}, [fetchPosts]);
+
+	const onDeleteHandler = (postId) => {
+		const filteredPost = posts.filter((post) => post._id !== postId);
+		setPosts(filteredPost);
+	};
 
 	return (
 		<div className={classes.container_Post}>
@@ -105,6 +112,7 @@ function UserPosts({ profilePicture }) {
 					createdAt={post.createdAt}
 					likes={post.likes}
 					comments={post.comments}
+					onPostDelete={onDeleteHandler}
 				/>
 			))}
 		</div>

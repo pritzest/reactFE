@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ToastContainer, { toaster } from "../../components/ToastContainer";
 import classes from "./Signup.module.css";
 
-function Login() {
+function Signup() {
 	const navigate = useNavigate();
 
 	const onSubmit = async (values, { setSubmitting }) => {
@@ -22,7 +22,6 @@ function Login() {
 			);
 			const data = await res.json();
 
-			console.log(data);
 			if (res.status === 422) {
 				toaster.error(data.message[0].msg);
 				throw res;
@@ -94,7 +93,6 @@ function Login() {
 													type="text"
 													placeholder="First Name"
 													name="first_name"
-													
 												/>
 											</div>
 											<div className={classes.inputBox}>
@@ -167,4 +165,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default Signup;

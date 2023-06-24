@@ -6,6 +6,7 @@ import Signup from "./pages/Signup";
 import MainPage from "./pages/Feed";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
+import SinglePost from "./pages/SinglePost";
 
 const myRouter = createBrowserRouter([
 	{
@@ -14,8 +15,8 @@ const myRouter = createBrowserRouter([
 			{ path: "login", element: <Login /> },
 			{ path: "signup", element: <Signup /> },
 			{ path: "feed", element: <MainPage />, loader: auth },
-			{ path: "post/:id", element: <MainPage />, loader: auth },
-			{ path: "profile", element: <Profile />, loader: auth },
+			{ path: "post/:id", element: <SinglePost />, loader: auth },
+			{ path: "profile/:id", element: <Profile />, loader: auth },
 			{ path: "edit-profile", element: <EditProfile />, loader: auth },
 
 			{ index: true, element: <div></div> },

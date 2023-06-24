@@ -27,7 +27,6 @@ function CreateComment({ postId, onComment }) {
 
 			const data = await response.json();
 			onComment(data.comment);
-			console.log("aaaa", data);
 		} catch (error) {
 			console.log(error);
 		}

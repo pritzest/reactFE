@@ -1,0 +1,56 @@
+.Posts {
+	width: 100%;
+
+	max-width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.234);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+
+.Posts_header {
+	display: flex;
+	align-items: flex-start;
+	font-size: 14px;
+}
+.Posts_header_info {
+	font-weight: bold;
+}
+.Posts_header_info span {
+	color: #657786;
+	font-weight: normal;
+	margin-left: 5px;
+}
+.Posts_header_info p {
+	font-weight: normal;
+	margin-top: 5px;
+}
+.avator {
+	border-radius: 100px;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin-right: 15px;
+}
+.Posts_Count {
+	display: flex;
+	margin: 10px 30px 10px 6rem;
+}
+.Posts_Count p {
+	margin-left: 7px;
+}
+.Posts_Likes {
+	display: flex;
+	align-items: center;
+}
+.Posts_Comments {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+}
