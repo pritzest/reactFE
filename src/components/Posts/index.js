@@ -121,8 +121,9 @@ function Posts({
 							{user.lastName}
 						</span>
 					</Link>
-					<Link to={`/post/${postId}`}>
+					<Link to={`/post/${postId}`} className={classes.PostLink}>
 						<span>{dateFormat(createdAt)}</span>
+						{console.log(createdAt)}
 						<p>{post}</p>
 					</Link>
 				</div>

@@ -473,3 +473,7 @@ section .color:nth-child(3) {
 .likeButton:active {
 	all: unset;
 }
+.PostLink {
+	all: unset;
+	cursor: pointer;
+}

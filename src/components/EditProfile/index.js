@@ -169,8 +169,8 @@ function EditProfile() {
 			</div>
 			<hr />
 			<div className={classes.EditProfileContainer}>
-				<h2 className={classes.Header}>Change Password</h2>
-
+				{/* <h2 className={classes.Header}>Change Password</h2> */}
+				{/* 
 				<div className={classes.Profile_Container}>
 					<div className={classes.Profile_Password}>
 						<p>Old Password</p>
@@ -183,7 +183,7 @@ function EditProfile() {
 					<button onClick={""} className={classes.saveButton}>
 						Save Password
 					</button>
-				</div>
+				</div> */}
 			</div>
 		</>
 	);
